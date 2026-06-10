@@ -160,3 +160,44 @@ function initBookingModal() {
 }
 
 initBookingModal();
+
+function initHeaderScrollState() {
+  const header = document.getElementById('header');
+  const sentinel = document.getElementById('scroll-sentinel');
+  if (!header || !sentinel) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => header.classList.toggle('is-scrolled', !entry.isIntersecting),
+    { threshold: 0 }
+  );
+  observer.observe(sentinel);
+}
+
+function initScrollReveal() {
+  const targets = document.querySelectorAll('main > section:not(.hero), .footer');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  targets.forEach((el) => el.classList.add('reveal'));
+
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    targets.forEach((el) => el.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  targets.forEach((el) => observer.observe(el));
+}
+
+initHeaderScrollState();
+initScrollReveal();
