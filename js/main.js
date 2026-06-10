@@ -24,3 +24,10 @@ function initNavToggle() {
 }
 
 initNavToggle();
+
+function initFooterYear() {
+  const el = document.querySelector('.js-year');
+  if (el) el.textContent = String(new Date().getFullYear());
+}
+
+initFooterYear();

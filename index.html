@@ -244,11 +244,68 @@
         <div class="img-placeholder img-placeholder--light testimonials__image" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — пацієнт клініки (буде додано пізніше)">Фото — 800×1000</div>
       </div>
     </section>
-    <!-- Task 10: cta banner -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner">
+        <h2 class="cta-banner__title">Готові записатися на огляд?</h2>
+        <p class="cta-banner__text">Залиште заявку — передзвонимо і підберемо зручний час.</p>
+        <button type="button" class="btn btn--pill js-open-modal">Записатися</button>
+      </div>
+    </section>
   </main>
 
   <footer class="footer" id="contacts">
-    <!-- Task 10 -->
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">Dental Studio</p>
+        <!-- TODO: replace with the clinic's real address -->
+        <p class="footer__text">Харків, вул. Клочківська ХХХ</p>
+        <!-- TODO: replace with the clinic's real working hours -->
+        <p class="footer__text">Пн–Сб: 09:00–19:00</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Навігація у футері">
+        <p class="footer__heading">Меню</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#">Ціни</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__heading">Контакти</p>
+        <!-- TODO: replace with the clinic's real phone number -->
+        <a class="footer__link" href="tel:+380000000000">+38 (0XX) XXX-XX-XX</a>
+        <!-- TODO: replace with the clinic's real email -->
+        <a class="footer__link" href="mailto:info@example.com">info@example.com</a>
+
+        <div class="footer__socials">
+          <!-- TODO: replace href values with real social links -->
+          <a href="#" aria-label="Instagram" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"></circle>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.8c0-2.6 1.5-4 3.9-4 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="Telegram" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M21.9 4.3 18.6 20c-.2 1-.9 1.2-1.7.8l-4.7-3.5-2.3 2.2c-.2.2-.5.4-.9.4l.3-4.6 8.4-7.6c.4-.3-.1-.5-.5-.2L7 12.9l-4.5-1.4c-1-.3-1-1 .2-1.5L20.6 3c.8-.3 1.6.2 1.3 1.3Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span class="js-year">2026</span> Dental Studio. Усі права захищені.</p>
+    </div>
   </footer>
 
   <!-- Task 11: booking modal -->
