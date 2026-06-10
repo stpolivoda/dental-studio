@@ -181,3 +181,29 @@
     display: flex;
   }
 }
+
+/* Image placeholder: shown until real photography is added.
+   Pass --ph-aspect-ratio inline to control the box's shape. */
+.img-placeholder {
+  --ph-aspect-ratio: 16 / 9;
+  position: relative;
+  aspect-ratio: var(--ph-aspect-ratio);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.04) 0,
+    rgba(255, 255, 255, 0.04) 12px,
+    transparent 12px,
+    transparent 24px
+  );
+  color: var(--color-text-muted-on-dark);
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  text-align: center;
+  padding: var(--space-3);
+  overflow: hidden;
+}
