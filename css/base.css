@@ -86,3 +86,7 @@ h3 { font-size: var(--fs-h3); }
   margin-inline: auto;
   padding-inline: var(--container-pad);
 }
+
+.no-scroll {
+  overflow: hidden;
+}

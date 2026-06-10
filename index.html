@@ -17,7 +17,42 @@
   <a class="skip-link" href="#main">Перейти до контенту</a>
 
   <header class="header" id="header">
-    <!-- Task 4 -->
+    <div class="container header__inner">
+      <a href="#main" class="header__logo">Dental Studio</a>
+
+      <nav class="nav" id="nav-menu" aria-label="Основна навігація">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Головна</a></li>
+          <li>
+            <details class="nav-dropdown">
+              <summary class="nav__link nav-dropdown__summary">Послуги</summary>
+              <ul class="nav-dropdown__menu">
+                <li><a href="#services">Терапія</a></li>
+                <li><a href="#services">Гігієна</a></li>
+                <li><a href="#services">Хірургія</a></li>
+                <li><a href="#services">Протезування</a></li>
+              </ul>
+            </details>
+          </li>
+          <!-- TODO: point to a dedicated prices page once it exists -->
+          <li><a href="#" class="nav__link">Ціни</a></li>
+          <li><a href="#contacts" class="nav__link">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <!-- TODO: replace with the clinic's real phone number -->
+        <a href="tel:+380000000000" class="header__phone">+38 (0XX) XXX-XX-XX</a>
+        <button type="button" class="btn btn--pill js-open-modal">ЗАПИСАТИСЯ</button>
+        <button type="button" class="nav__toggle js-nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Відкрити меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main id="main">
