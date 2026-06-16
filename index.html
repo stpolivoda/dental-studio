@@ -23,34 +23,68 @@
       <a href="#main" class="header__logo">Dental Studio</a>
 
       <nav class="nav" id="nav-menu" aria-label="Основна навігація">
+        <div class="nav__header">
+          <button type="button" class="nav__close js-nav-close" aria-label="Закрити меню">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"></path>
+            </svg>
+          </button>
+        </div>
+
         <ul class="nav__list">
           <li><a href="index.html" class="nav__link">Головна</a></li>
           <li>
             <details class="nav-dropdown">
-              <summary class="nav__link nav-dropdown__summary">Послуги</summary>
+              <summary class="nav__link nav-dropdown__summary">
+                Послуги
+                <svg class="nav-dropdown__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9L12 15L18 9"></path>
+                </svg>
+              </summary>
               <ul class="nav-dropdown__menu">
-                <li><a href="#services">Терапія</a></li>
-                <li><a href="#services">Гігієна</a></li>
-                <li><a href="#services">Хірургія</a></li>
-                <li><a href="#services">Протезування</a></li>
+                <li><a href="terapia.html">Терапія</a></li>
+                <li><a href="gigena.html">Гігієна</a></li>
+                <li><a href="hirurgia.html">Хірургія</a></li>
+                <li><a href="protezuvannia.html">Протезування</a></li>
               </ul>
             </details>
           </li>
-          <!-- TODO: point to a dedicated prices page once it exists -->
-          <li><a href="#" class="nav__link">Ціни</a></li>
-          <li><a href="#contacts" class="nav__link">Контакти</a></li>
+          <li><a href="prices.html" class="nav__link">Ціни</a></li>
+          <li><a href="contacts.html" class="nav__link">Контакти</a></li>
         </ul>
+
+        <div class="nav__contact">
+          <a href="tel:+380509088530" class="nav__contact-phone">+38 (050) 908-85-30</a>
+          <div class="nav__socials">
+            <a href="https://www.instagram.com/dr.fomenkoirina/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path>
+                <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"></path>
+                <path d="M17.5 6.51L17.51 6.49889"></path>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/groups/1414375409122479/" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"></path>
+              </svg>
+            </a>
+            <a href="https://t.me/irenfomenko" target="_blank" rel="noopener" aria-label="Telegram" class="footer__social">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.2488 15.7229"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
       </nav>
 
       <div class="header__actions">
-        <!-- TODO: replace with the clinic's real phone number -->
-        <a href="tel:+380000000000" class="header__phone">+38 (0XX) XXX-XX-XX</a>
+        <a href="tel:+380509088530" class="header__phone">+38 (050) 908-85-30</a>
         <button type="button" class="btn btn--pill js-open-modal">ЗАПИСАТИСЯ</button>
         <button type="button" class="nav__toggle js-nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Відкрити меню">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 5H21"></path>
+            <path d="M3 12H21"></path>
+            <path d="M3 19H21"></path>
           </svg>
         </button>
       </div>
@@ -59,47 +93,48 @@
 
   <main id="main">
     <section class="hero" id="hero">
-      <div class="img-placeholder hero__bg" style="--ph-aspect-ratio: 16/10;" role="img" aria-label="Фото кабінету клініки (буде додано пізніше)">
-        Фото — 1920×1200
-      </div>
+      <picture class="hero__bg">
+        <source media="(min-width: 768px)" srcset="assets/images/hero.png">
+        <img src="assets/images/hero_mobile.png" alt="Кабінет клініки Dental Studio" fetchpriority="high">
+      </picture>
       <div class="hero__overlay"></div>
 
       <div class="container hero__content">
-        <p class="hero__location">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
-            <path d="M5 9C5 9 8.5 6 8.5 3.5C8.5 1.6 6.9 0.5 5 0.5C3.1 0.5 1.5 1.6 1.5 3.5C1.5 6 5 9 5 9Z"></path>
+        <p class="hero__location reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 10C20 14.4183 12 22 12 22C12 22 4 14.4183 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10Z"></path>
+            <path d="M12 11C12.5523 11 13 10.5523 13 10C13 9.44772 12.5523 9 12 9C11.4477 9 11 9.44772 11 10C11 10.5523 11.4477 11 12 11Z" fill="currentColor"></path>
           </svg>
-          <!-- TODO: replace with the clinic's real city and address -->
-          <span>Харків, вул. Клочківська ХХХ</span>
+          <span>Харків, вул. Клочківська 109Б</span>
         </p>
 
-        <h1 class="hero__title">
+        <h1 class="hero__title reveal">
           Стоматологія,<br>
           де <em>не страшно</em><br>
           і зручно
         </h1>
 
-        <p class="hero__subtitle">
+        <p class="hero__subtitle reveal">
           Від першого огляду до результату — без черг, сюрпризів і зайвих процедур.
         </p>
 
-        <button type="button" class="btn btn--pill js-open-modal">Записатися на огляд</button>
+        <button type="button" class="btn btn--pill js-open-modal reveal">Записатися на огляд</button>
       </div>
     </section>
     <section class="services" id="services">
       <div class="container">
+        <p class="section-eyebrow">-Послуги</p>
         <h2 class="section-title">Від огляду до протезування</h2>
         <p class="section-intro">Всі необхідні послуги в одному місці — без направлень і зайвих переїздів.</p>
 
         <div class="services__grid">
-          <article class="service-card service-card--photo">
+          <article class="service-card">
             <div class="img-placeholder service-card__bg" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — Терапія (буде додано пізніше)">Фото — 640×850</div>
             <div class="service-card__overlay"></div>
             <div class="service-card__content">
               <div>
                 <h3 class="service-card__title">Терапія</h3>
-                <!-- TODO: link to dedicated service page -->
-                <a href="#" class="service-card__link">Детальніше →</a>
+                <a href="terapia.html" class="service-card__link">Детальніше →</a>
               </div>
               <div>
                 <p class="service-card__price-label">Ціна</p>
@@ -110,10 +145,12 @@
           </article>
 
           <article class="service-card">
+            <div class="img-placeholder service-card__bg" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — Гігієна (буде додано пізніше)">Фото — 640×850</div>
+            <div class="service-card__overlay"></div>
             <div class="service-card__content">
               <div>
                 <h3 class="service-card__title">Гігієна</h3>
-                <a href="#" class="service-card__link">Детальніше →</a>
+                <a href="gigena.html" class="service-card__link">Детальніше →</a>
               </div>
               <div>
                 <p class="service-card__price-label">Ціна</p>
@@ -124,10 +161,12 @@
           </article>
 
           <article class="service-card">
+            <div class="img-placeholder service-card__bg" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — Хірургія (буде додано пізніше)">Фото — 640×850</div>
+            <div class="service-card__overlay"></div>
             <div class="service-card__content">
               <div>
                 <h3 class="service-card__title">Хірургія</h3>
-                <a href="#" class="service-card__link">Детальніше →</a>
+                <a href="hirurgia.html" class="service-card__link">Детальніше →</a>
               </div>
               <div>
                 <p class="service-card__price-label">Ціна</p>
@@ -138,10 +177,12 @@
           </article>
 
           <article class="service-card">
+            <div class="img-placeholder service-card__bg" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — Протезування (буде додано пізніше)">Фото — 640×850</div>
+            <div class="service-card__overlay"></div>
             <div class="service-card__content">
               <div>
                 <h3 class="service-card__title">Протезування</h3>
-                <a href="#" class="service-card__link">Детальніше →</a>
+                <a href="protezuvannia.html" class="service-card__link">Детальніше →</a>
               </div>
               <div>
                 <p class="service-card__price-label">Ціна</p>
@@ -153,114 +194,177 @@
         </div>
       </div>
     </section>
-    <section class="process" id="process">
-      <div class="container">
-        <h2 class="section-title">Як проходить прийом</h2>
-
-        <div class="process__layout">
-          <ol class="process__steps">
-            <li class="process__step">
-              <span class="process__number">01</span>
-              <h3 class="process__title">Запис</h3>
-              <p class="process__text">Телефонуєте або пишете — підбираємо зручний час.</p>
-            </li>
-            <li class="process__step">
-              <span class="process__number">02</span>
-              <h3 class="process__title">Огляд</h3>
-              <p class="process__text">Оглядаємо, за потреби робимо знімок. Пояснюємо що знайшли.</p>
-            </li>
-            <li class="process__step">
-              <span class="process__number">03</span>
-              <h3 class="process__title">План і ціна</h3>
-              <p class="process__text">Озвучуємо вартість до початку лікування. Що узгоджено — те і платите.</p>
-            </li>
-            <li class="process__step">
-              <span class="process__number">04</span>
-              <h3 class="process__title">Лікування</h3>
-              <p class="process__text">Працюємо за протоколом. Ви в курсі кожного кроку — від анестезії до фінального результату.</p>
-            </li>
-          </ol>
-
-          <div class="img-placeholder img-placeholder--light process__image" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — прийом у клініці (буде додано пізніше)">Фото — 800×1000</div>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">Турбота</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Довіра</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Комфорт</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Якість</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Результат</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Прозорість</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Надійність</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Сучасність</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Уважність</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Точність</span>
+          <span class="marquee__dot">·</span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">Турбота</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Довіра</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Комфорт</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Якість</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Результат</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Прозорість</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Надійність</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Сучасність</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Уважність</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__item">Точність</span>
+          <span class="marquee__dot">·</span>
         </div>
       </div>
+    </div>
+    <section class="process" id="process">
+      <div class="container process__layout">
+        <div class="process__heading">
+          <p class="section-eyebrow">-Процес</p>
+          <h2 class="section-title">Як проходить прийом</h2>
+        </div>
+
+        <ol class="process__steps">
+          <li class="process__step is-active">
+            <span class="process__number">01</span>
+            <h3 class="process__title">Запис</h3>
+            <p class="process__text">Телефонуєте або пишете — підбираємо зручний час.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__number">02</span>
+            <h3 class="process__title">Огляд</h3>
+            <p class="process__text">Оглядаємо, за потреби робимо знімок. Пояснюємо що знайшли.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__number">03</span>
+            <h3 class="process__title">План і ціна</h3>
+            <p class="process__text">Озвучуємо вартість до початку лікування. Що узгоджено — те і платите.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__number">04</span>
+            <h3 class="process__title">Лікування</h3>
+            <p class="process__text">Працюємо за протоколом. Ви в курсі кожного кроку — від анестезії до фінального результату.</p>
+          </li>
+        </ol>
+      </div>
     </section>
-    <section class="why-us" id="why-us">
+    <section class="about" id="about">
       <div class="container">
-        <h2 class="section-title">Чому обирають нас</h2>
-
-        <div class="why-us__grid">
-          <article class="why-us__item">
-            <div class="why-us__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
-            </div>
-            <h3 class="why-us__title">Перевага 1</h3>
-            <!-- TODO: replace with real copy -->
-            <p class="why-us__text">Короткий опис переваги — текст буде уточнено пізніше.</p>
-          </article>
-
-          <article class="why-us__item">
-            <div class="why-us__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
-            </div>
-            <h3 class="why-us__title">Перевага 2</h3>
-            <p class="why-us__text">Короткий опис переваги — текст буде уточнено пізніше.</p>
-          </article>
-
-          <article class="why-us__item">
-            <div class="why-us__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
-            </div>
-            <h3 class="why-us__title">Перевага 3</h3>
-            <p class="why-us__text">Короткий опис переваги — текст буде уточнено пізніше.</p>
-          </article>
-
-          <article class="why-us__item">
-            <div class="why-us__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
-            </div>
-            <h3 class="why-us__title">Перевага 4</h3>
-            <p class="why-us__text">Короткий опис переваги — текст буде уточнено пізніше.</p>
-          </article>
+        <div class="about__intro">
+          <p class="section-eyebrow">-Про нас</p>
+          <h2 class="section-title">Про лікарню</h2>
+          <p class="about__text">Dental Studio — сучасна стоматологічна клініка в центрі міста. Ми поєднуємо клінічний досвід, новітнє обладнання та уважне ставлення до кожного пацієнта, щоб ваш візит був комфортним і без зайвого стресу.</p>
+        </div>
+        <div class="about__gallery">
+          <div class="about__photo about__photo--primary">
+            <img src="assets/images/about_clinic_first.png" alt="Інтер'єр клініки Dental Studio" width="1122" height="1402" loading="lazy">
+          </div>
+          <div class="about__photo about__photo--secondary">
+            <img src="assets/images/about_clinic_second.png" alt="Кабінет клініки Dental Studio" width="1086" height="1448" loading="lazy">
+          </div>
         </div>
       </div>
     </section>
     <section class="testimonials" id="testimonials">
-      <div class="container testimonials__layout">
-        <div>
-          <h2 class="section-title">Що кажуть пацієнти</h2>
+      <div class="container">
+        <p class="section-eyebrow">-Відгуки</p>
+        <h2 class="section-title">Що кажуть пацієнти</h2>
+        <p class="section-intro">Реальні відгуки пацієнтів, які вже пройшли лікування в нашій клініці.</p>
 
-          <div class="testimonials__list">
+        <div class="testimonials__carousel js-testimonials-carousel">
+          <button class="testimonials__arrow testimonials__arrow--prev js-testimonials-prev" type="button" aria-label="Попередній відгук">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 6L9 12L15 18"></path>
+            </svg>
+          </button>
+          <button class="testimonials__arrow testimonials__arrow--next js-testimonials-next" type="button" aria-label="Наступний відгук">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 6L15 12L9 18"></path>
+            </svg>
+          </button>
+
+          <div class="testimonials__track">
             <blockquote class="testimonial">
               <p class="testimonial__quote">«Прийшов на консультацію щодо імплантації — думав що це дуже дорого і складно. Все розклали по поличках, показали варіанти. Зробив. Шкодую тільки що не прийшов раніше.»</p>
-              <cite class="testimonial__author">Андрій, 45 років</cite>
+              <cite class="testimonial__author">- Андрій, 45 років</cite>
             </blockquote>
 
             <blockquote class="testimonial">
               <p class="testimonial__quote">«Роблю чистку тут вже вдруге. Результат помітний одразу, кабінет чистий і сучасний. Приємно що не намагаються продати щось зайве.»</p>
-              <cite class="testimonial__author">Наталя, 29 років</cite>
+              <cite class="testimonial__author">- Наталя, 29 років</cite>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <p class="testimonial__quote">«Боявся стоматологів все життя, але тут підійшли дуже уважно — пояснили кожен крок, нічого не боліло. Тепер не відкладаю візити.»</p>
+              <cite class="testimonial__author">- Олег, 38 років</cite>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <p class="testimonial__quote">«Робила відбілювання перед весіллям. Результат перевершив очікування, а лікар підказав як підтримувати ефект довше.»</p>
+              <cite class="testimonial__author">- Марина, 27 років</cite>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <p class="testimonial__quote">«Дитина вперше була без істерики у стоматолога! Лікарі знайшли підхід, пояснили все в ігровій формі. Дуже дякую за терпіння.»</p>
+              <cite class="testimonial__author">- Ірина, 34 роки</cite>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <p class="testimonial__quote">«Носив капи рік — зуби рівні, прикус виправили без хірургії. Контроль кожні два тижні, завжди вчасно і за розкладом.»</p>
+              <cite class="testimonial__author">- Дмитро, 31 рік</cite>
             </blockquote>
           </div>
         </div>
 
-        <div class="img-placeholder img-placeholder--light testimonials__image" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — пацієнт клініки (буде додано пізніше)">Фото — 800×1000</div>
+        <div class="testimonials__dots js-testimonials-dots"></div>
       </div>
     </section>
     <section class="cta-banner">
-      <div class="container cta-banner__inner">
-        <h2 class="cta-banner__title">Готові записатися на огляд?</h2>
-        <p class="cta-banner__text">Залиште заявку — передзвонимо і підберемо зручний час.</p>
-        <button type="button" class="btn btn--pill js-open-modal">Записатися</button>
+      <div class="cta-banner__pin">
+        <div class="img-placeholder cta-banner__photo cta-banner__photo--1" style="--ph-aspect-ratio: 4/5;" role="img" aria-label="Фото клініки (буде додано пізніше)">Фото</div>
+        <div class="img-placeholder cta-banner__photo cta-banner__photo--2" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото клініки (буде додано пізніше)">Фото</div>
+        <div class="img-placeholder cta-banner__photo cta-banner__photo--3" style="--ph-aspect-ratio: 4/5;" role="img" aria-label="Фото клініки (буде додано пізніше)">Фото</div>
+        <div class="img-placeholder cta-banner__photo cta-banner__photo--4" style="--ph-aspect-ratio: 3/2;" role="img" aria-label="Фото клініки (буде додано пізніше)">Фото</div>
+
+        <div class="container cta-banner__inner">
+          <h2 class="cta-banner__title">Готові записатися на огляд?</h2>
+          <p class="cta-banner__text">Залиште заявку — передзвонимо і підберемо зручний час.</p>
+          <button type="button" class="btn btn--solid js-open-modal">Записатися</button>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer" id="contacts">
+  <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__col">
         <p class="footer__logo">Dental Studio</p>
-        <!-- TODO: replace with the clinic's real address -->
-        <p class="footer__text">Харків, вул. Клочківська ХХХ</p>
+        <p class="footer__text">Харків, вул. Клочківська 109Б</p>
         <!-- TODO: replace with the clinic's real working hours -->
         <p class="footer__text">Пн–Сб: 09:00–19:00</p>
       </div>
@@ -270,35 +374,34 @@
         <ul class="footer__links">
           <li><a href="index.html">Головна</a></li>
           <li><a href="#services">Послуги</a></li>
-          <li><a href="#">Ціни</a></li>
-          <li><a href="#contacts">Контакти</a></li>
+          <li><a href="prices.html">Ціни</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
         </ul>
       </nav>
 
       <div class="footer__col">
         <p class="footer__heading">Контакти</p>
-        <!-- TODO: replace with the clinic's real phone number -->
-        <a class="footer__link" href="tel:+380000000000">+38 (0XX) XXX-XX-XX</a>
+        <a class="footer__link" href="tel:+380509088530">+38 (050) 908-85-30</a>
         <!-- TODO: replace with the clinic's real email -->
         <a class="footer__link" href="mailto:info@example.com">info@example.com</a>
 
         <div class="footer__socials">
           <!-- TODO: replace href values with real social links -->
-          <a href="#" aria-label="Instagram" class="footer__social">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
-              <circle cx="12" cy="12" r="4"></circle>
-              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"></circle>
+          <a href="https://www.instagram.com/dr.fomenkoirina/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path>
+              <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"></path>
+              <path d="M17.5 6.51L17.51 6.49889"></path>
             </svg>
           </a>
-          <a href="#" aria-label="Facebook" class="footer__social">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.8c0-2.6 1.5-4 3.9-4 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"></path>
+          <a href="https://www.facebook.com/groups/1414375409122479/" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"></path>
             </svg>
           </a>
-          <a href="#" aria-label="Telegram" class="footer__social">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M21.9 4.3 18.6 20c-.2 1-.9 1.2-1.7.8l-4.7-3.5-2.3 2.2c-.2.2-.5.4-.9.4l.3-4.6 8.4-7.6c.4-.3-.1-.5-.5-.2L7 12.9l-4.5-1.4c-1-.3-1-1 .2-1.5L20.6 3c.8-.3 1.6.2 1.3 1.3Z"></path>
+          <a href="https://t.me/irenfomenko" target="_blank" rel="noopener" aria-label="Telegram" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.2488 15.7229"></path>
             </svg>
           </a>
         </div>
@@ -313,9 +416,8 @@
   <div class="modal-overlay js-modal-overlay" hidden>
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <button type="button" class="modal__close js-modal-close" aria-label="Закрити">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-          <line x1="4" y1="4" x2="20" y2="20"></line>
-          <line x1="20" y1="4" x2="4" y2="20"></line>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"></path>
         </svg>
       </button>
 

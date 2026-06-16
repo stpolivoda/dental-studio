@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dental Studio — Терапія</title>
+  <meta name="description" content="Лікування карієсу та реставрація зубів у клініці Dental Studio — матеріали преміум класу, повне знеболення, результат за один прийом.">
+
+  <link rel="preload" href="assets/fonts/files/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+
+  <header class="header is-scrolled" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">Dental Studio</a>
+
+      <nav class="nav" id="nav-menu" aria-label="Основна навігація">
+        <div class="nav__header">
+          <button type="button" class="nav__close js-nav-close" aria-label="Закрити меню">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"></path>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Головна</a></li>
+          <li>
+            <details class="nav-dropdown">
+              <summary class="nav__link nav-dropdown__summary">
+                Послуги
+                <svg class="nav-dropdown__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9L12 15L18 9"></path>
+                </svg>
+              </summary>
+              <ul class="nav-dropdown__menu">
+                <li><a href="terapia.html" aria-current="page">Терапія</a></li>
+                <li><a href="gigena.html">Гігієна</a></li>
+                <li><a href="hirurgia.html">Хірургія</a></li>
+                <li><a href="protezuvannia.html">Протезування</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="prices.html" class="nav__link">Ціни</a></li>
+          <li><a href="contacts.html" class="nav__link">Контакти</a></li>
+        </ul>
+
+        <div class="nav__contact">
+          <a href="tel:+380509088530" class="nav__contact-phone">+38 (050) 908-85-30</a>
+          <div class="nav__socials">
+            <a href="https://www.instagram.com/dr.fomenkoirina/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path>
+                <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"></path>
+                <path d="M17.5 6.51L17.51 6.49889"></path>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/groups/1414375409122479/" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"></path>
+              </svg>
+            </a>
+            <a href="https://t.me/irenfomenko" target="_blank" rel="noopener" aria-label="Telegram" class="footer__social">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.2488 15.7229"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+380509088530" class="header__phone">+38 (050) 908-85-30</a>
+        <button type="button" class="btn btn--pill js-open-modal">ЗАПИСАТИСЯ</button>
+        <button type="button" class="nav__toggle js-nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Відкрити меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 5H21"></path>
+            <path d="M3 12H21"></path>
+            <path d="M3 19H21"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="svc-hero">
+      <div class="container">
+        <div class="svc-hero__top">
+          <h1 class="svc-hero__title">Лікування карієсу та реставрація</h1>
+          <div class="svc-hero__meta">
+            <p class="svc-hero__desc">Лікуємо карієс і відновлюємо зуби матеріалами преміум класу. Пояснюємо кожен крок — без сюрпризів і зайвих процедур.</p>
+            <p class="svc-hero__location">
+              <span class="svc-hero__dot" aria-hidden="true"></span>
+              Харків, вул. Клочківська 109Б
+            </p>
+          </div>
+        </div>
+
+        <div class="svc-hero__photos">
+          <div class="svc-hero__photo svc-hero__photo--side js-svc-side">
+            <div class="img-placeholder" style="--ph-aspect-ratio: 4/5;" role="img" aria-label="Фото (буде додано пізніше)">Фото</div>
+          </div>
+          <div class="svc-hero__photo svc-hero__photo--center">
+            <div class="img-placeholder" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото (буде додано пізніше)">Фото</div>
+          </div>
+          <div class="svc-hero__photo svc-hero__photo--side js-svc-side">
+            <div class="img-placeholder" style="--ph-aspect-ratio: 4/5;" role="img" aria-label="Фото (буде додано пізніше)">Фото</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+      <div class="container process__layout">
+        <div class="process__heading">
+          <p class="section-eyebrow">-Процес</p>
+          <h2 class="section-title">Як проходить лікування</h2>
+        </div>
+
+        <ol class="process__steps">
+          <li class="process__step is-active">
+            <span class="process__number">01</span>
+            <h3 class="process__title">Огляд і діагностика</h3>
+            <p class="process__text">Оглядаємо зуб, за потреби робимо знімок. Визначаємо обсяг роботи і одразу озвучуємо вартість.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__number">02</span>
+            <h3 class="process__title">Анестезія</h3>
+            <p class="process__text">Робимо знеболення — процедура повністю комфортна. Починаємо тільки коли ви готові.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__number">03</span>
+            <h3 class="process__title">Лікування</h3>
+            <p class="process__text">Видаляємо уражену тканину, обробляємо і відновлюємо зуб композитом із підбором кольору.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__number">04</span>
+            <h3 class="process__title">Результат</h3>
+            <p class="process__text">Перевіряємо прикус, полімеризуємо і поліруємо. Зуб виглядає природньо і готовий до навантаження.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faq" id="faq">
+      <div class="container faq__layout">
+
+        <div class="faq__left">
+          <p class="section-eyebrow">-FAQ</p>
+          <h2 class="section-title">Часті запитання</h2>
+
+        </div>
+
+        <div class="faq__right">
+          <ul class="faq__list">
+            <li>
+              <details class="faq__details" open>
+                <summary class="faq__q">
+                  Чи боляче лікувати карієс?
+                  <span class="faq__toggle" aria-hidden="true"></span>
+                </summary>
+                <p class="faq__a">Ні. При правильній анестезії процедура повністю безболісна. Починаємо лише коли знеболення подіяло.</p>
+              </details>
+            </li>
+            <li>
+              <details class="faq__details">
+                <summary class="faq__q">
+                  Скільки часу займає лікування?
+                  <span class="faq__toggle" aria-hidden="true"></span>
+                </summary>
+                <p class="faq__a">Залежно від складності — від 45 хвилин до 1,5 години. Один зуб — один прийом.</p>
+              </details>
+            </li>
+            <li>
+              <details class="faq__details">
+                <summary class="faq__q">
+                  Скільки тримається пломба?
+                  <span class="faq__toggle" aria-hidden="true"></span>
+                </summary>
+                <p class="faq__a">Сучасний композит служить 7–10 років при правильному догляді і регулярній гігієні.</p>
+              </details>
+            </li>
+            <li>
+              <details class="faq__details">
+                <summary class="faq__q">
+                  Чи видно реставрацію?
+                  <span class="faq__toggle" aria-hidden="true"></span>
+                </summary>
+                <p class="faq__a">Ні. Підбираємо колір індивідуально — реставрацію не помітно навіть зблизька.</p>
+              </details>
+            </li>
+            <li>
+              <details class="faq__details">
+                <summary class="faq__q">
+                  Що буде, якщо не лікувати карієс?
+                  <span class="faq__toggle" aria-hidden="true"></span>
+                </summary>
+                <p class="faq__a">Карієс поступово руйнує зуб і може перейти в пульпіт — це вже серйозніше і дорожче лікування. Краще не відкладати.</p>
+              </details>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="pricing-cta">
+      <div class="container pricing-cta__inner">
+        <h2 class="section-title">Запишіться на огляд</h2>
+        <p class="pricing-cta__text">Скажемо що потрібно і скільки коштуватиме — без зайвих процедур.</p>
+        <button type="button" class="btn btn--solid js-open-modal">Записатися</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">Dental Studio</p>
+        <p class="footer__text">Харків, вул. Клочківська 109Б</p>
+        <p class="footer__text">Пн–Сб: 09:00–19:00</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Навігація у футері">
+        <p class="footer__heading">Меню</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="index.html#services">Послуги</a></li>
+          <li><a href="prices.html">Ціни</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__heading">Контакти</p>
+        <a class="footer__link" href="tel:+380509088530">+38 (050) 908-85-30</a>
+        <a class="footer__link" href="mailto:info@example.com">info@example.com</a>
+
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/dr.fomenkoirina/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path>
+              <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"></path>
+              <path d="M17.5 6.51L17.51 6.49889"></path>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/groups/1414375409122479/" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"></path>
+            </svg>
+          </a>
+          <a href="https://t.me/irenfomenko" target="_blank" rel="noopener" aria-label="Telegram" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.2488 15.7229"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span class="js-year">2026</span> Dental Studio. Усі права захищені.</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay js-modal-overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button type="button" class="modal__close js-modal-close" aria-label="Закрити">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"></path>
+        </svg>
+      </button>
+
+      <h2 id="modal-title" class="modal__title">Запис на огляд</h2>
+      <p class="modal__subtitle">Залиште контакти — ми передзвонимо, щоб підтвердити час.</p>
+
+      <form class="modal__form js-booking-form" novalidate>
+        <div class="form-field">
+          <label for="booking-name">Ім'я</label>
+          <input type="text" id="booking-name" name="name" autocomplete="name" required>
+          <p class="form-field__error" data-error-for="name" role="alert"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="booking-phone">Телефон</label>
+          <input type="tel" id="booking-phone" name="phone" autocomplete="tel" required>
+          <p class="form-field__error" data-error-for="phone" role="alert"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="booking-service">Послуга</label>
+          <select id="booking-service" name="service">
+            <option value="Терапія" selected>Терапія</option>
+            <option value="Гігієна">Гігієна</option>
+            <option value="Хірургія">Хірургія</option>
+            <option value="Протезування">Протезування</option>
+            <option value="Інше">Інше</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="booking-message">Коментар (необов'язково)</label>
+          <textarea id="booking-message" name="message" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--solid">Надіслати заявку</button>
+
+        <p class="modal__status" data-status role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

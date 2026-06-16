@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dental Studio — Ціни</title>
+  <meta name="description" content="Прайс-лист стоматологічної клініки Dental Studio — ціни на терапію, гігієну, хірургію та протезування.">
+
+  <link rel="preload" href="assets/fonts/files/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+
+  <header class="header is-scrolled" id="header">
+    <div class="container header__inner">
+      <a href="#main" class="header__logo">Dental Studio</a>
+
+      <nav class="nav" id="nav-menu" aria-label="Основна навігація">
+        <div class="nav__header">
+          <button type="button" class="nav__close js-nav-close" aria-label="Закрити меню">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"></path>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Головна</a></li>
+          <li>
+            <details class="nav-dropdown">
+              <summary class="nav__link nav-dropdown__summary">
+                Послуги
+                <svg class="nav-dropdown__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9L12 15L18 9"></path>
+                </svg>
+              </summary>
+              <ul class="nav-dropdown__menu">
+                <li><a href="terapia.html">Терапія</a></li>
+                <li><a href="gigena.html">Гігієна</a></li>
+                <li><a href="hirurgia.html">Хірургія</a></li>
+                <li><a href="protezuvannia.html">Протезування</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="prices.html" class="nav__link">Ціни</a></li>
+          <li><a href="contacts.html" class="nav__link">Контакти</a></li>
+        </ul>
+
+        <div class="nav__contact">
+          <a href="tel:+380509088530" class="nav__contact-phone">+38 (050) 908-85-30</a>
+          <div class="nav__socials">
+            <a href="https://www.instagram.com/dr.fomenkoirina/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path>
+                <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"></path>
+                <path d="M17.5 6.51L17.51 6.49889"></path>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/groups/1414375409122479/" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"></path>
+              </svg>
+            </a>
+            <a href="https://t.me/irenfomenko" target="_blank" rel="noopener" aria-label="Telegram" class="footer__social">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.2488 15.7229"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+380509088530" class="header__phone">+38 (050) 908-85-30</a>
+        <button type="button" class="btn btn--pill js-open-modal">ЗАПИСАТИСЯ</button>
+        <button type="button" class="nav__toggle js-nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Відкрити меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 5H21"></path>
+            <path d="M3 12H21"></path>
+            <path d="M3 19H21"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <p class="section-eyebrow">-Ціни</p>
+        <h2 class="section-title">Прайс-лист</h2>
+        <p class="section-intro">Орієнтовні ціни на основні послуги. Точну вартість лікар озвучить після огляду — вона залежить від складності та клінічної картини.</p>
+
+        <div class="pricing__groups">
+          <div class="price-group">
+            <h3 class="price-group__title">Терапія</h3>
+            <ul class="price-list">
+              <li class="price-row">
+                <span class="price-row__name">Консультація стоматолога</span>
+                <span class="price-row__price">₴300</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Лікування карієсу (1 поверхня)</span>
+                <span class="price-row__price">від ₴1200</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Лікування карієсу (2+ поверхні)</span>
+                <span class="price-row__price">від ₴1800</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Лікування пульпіту (1 канал)</span>
+                <span class="price-row__price">від ₴2500</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Лікування пульпіту (2–3 канали)</span>
+                <span class="price-row__price">від ₴3500</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Художня реставрація зуба</span>
+                <span class="price-row__price">від ₴2000</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Вінір композитний</span>
+                <span class="price-row__price">від ₴3500</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="price-group__title">Гігієна</h3>
+            <ul class="price-list">
+              <li class="price-row">
+                <span class="price-row__name">Професійна чистка (ультразвук)</span>
+                <span class="price-row__price">₴1200</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Чистка Air Flow</span>
+                <span class="price-row__price">₴800</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Комплексна гігієна (УЗ + Air Flow)</span>
+                <span class="price-row__price">₴1800</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Відбілювання Zoom</span>
+                <span class="price-row__price">₴4500</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Фторування зубів</span>
+                <span class="price-row__price">₴500</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Полірування</span>
+                <span class="price-row__price">₴400</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="price-group__title">Хірургія</h3>
+            <ul class="price-list">
+              <li class="price-row">
+                <span class="price-row__name">Видалення зуба (простий випадок)</span>
+                <span class="price-row__price">₴800</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Видалення зуба (складний випадок)</span>
+                <span class="price-row__price">від ₴2500</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Видалення зуба мудрості</span>
+                <span class="price-row__price">від ₴3000</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Імплантація (1 імплант)</span>
+                <span class="price-row__price">від ₴15000</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Синус-ліфтинг</span>
+                <span class="price-row__price">від ₴8000</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Видалення кісти</span>
+                <span class="price-row__price">від ₴3500</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="price-group__title">Протезування</h3>
+            <ul class="price-list">
+              <li class="price-row">
+                <span class="price-row__name">Коронка металокерамічна</span>
+                <span class="price-row__price">від ₴5000</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Коронка цирконієва</span>
+                <span class="price-row__price">від ₴8000</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Коронка E-max</span>
+                <span class="price-row__price">від ₴9000</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Вінір керамічний</span>
+                <span class="price-row__price">від ₴10000</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Зйомний протез (пластинковий)</span>
+                <span class="price-row__price">від ₴7000</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Часткова зйомна конструкція</span>
+                <span class="price-row__price">від ₴12000</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="pricing__note">* Ціни орієнтовні і не є публічною офертою. Остаточна вартість залежить від клінічної картини та узгоджується з лікарем до початку лікування.</p>
+      </div>
+    </section>
+
+    <section class="pricing-cta">
+      <div class="container pricing-cta__inner">
+        <h2 class="section-title">Хочете дізнатися точну ціну?</h2>
+        <p class="pricing-cta__text">Залиште заявку — лікар огляне і складе індивідуальний план лікування з точною вартістю, без сюрпризів.</p>
+        <button type="button" class="btn btn--solid js-open-modal">Записатися на консультацію</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">Dental Studio</p>
+        <p class="footer__text">Харків, вул. Клочківська 109Б</p>
+        <!-- TODO: replace with the clinic's real working hours -->
+        <p class="footer__text">Пн–Сб: 09:00–19:00</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Навігація у футері">
+        <p class="footer__heading">Меню</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="index.html#services">Послуги</a></li>
+          <li><a href="prices.html">Ціни</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__heading">Контакти</p>
+        <a class="footer__link" href="tel:+380509088530">+38 (050) 908-85-30</a>
+        <!-- TODO: replace with the clinic's real email -->
+        <a class="footer__link" href="mailto:info@example.com">info@example.com</a>
+
+        <div class="footer__socials">
+          <!-- TODO: replace href values with real social links -->
+          <a href="https://www.instagram.com/dr.fomenkoirina/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path>
+              <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"></path>
+              <path d="M17.5 6.51L17.51 6.49889"></path>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/groups/1414375409122479/" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"></path>
+            </svg>
+          </a>
+          <a href="https://t.me/irenfomenko" target="_blank" rel="noopener" aria-label="Telegram" class="footer__social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.2488 15.7229"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span class="js-year">2026</span> Dental Studio. Усі права захищені.</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay js-modal-overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button type="button" class="modal__close js-modal-close" aria-label="Закрити">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"></path>
+        </svg>
+      </button>
+
+      <h2 id="modal-title" class="modal__title">Запис на огляд</h2>
+      <p class="modal__subtitle">Залиште контакти — ми передзвонимо, щоб підтвердити час.</p>
+
+      <form class="modal__form js-booking-form" novalidate>
+        <div class="form-field">
+          <label for="booking-name">Ім'я</label>
+          <input type="text" id="booking-name" name="name" autocomplete="name" required>
+          <p class="form-field__error" data-error-for="name" role="alert"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="booking-phone">Телефон</label>
+          <input type="tel" id="booking-phone" name="phone" autocomplete="tel" required>
+          <p class="form-field__error" data-error-for="phone" role="alert"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="booking-service">Послуга</label>
+          <select id="booking-service" name="service">
+            <option value="Терапія">Терапія</option>
+            <option value="Гігієна">Гігієна</option>
+            <option value="Хірургія">Хірургія</option>
+            <option value="Протезування">Протезування</option>
+            <option value="Інше">Інше</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="booking-message">Коментар (необов'язково)</label>
+          <textarea id="booking-message" name="message" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--solid">Надіслати заявку</button>
+
+        <p class="modal__status" data-status role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
