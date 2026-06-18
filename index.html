@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dental Studio — Стоматологія, де не страшно і зручно</title>
+  <title>Dental Studio — Стоматологія, де комфортно та професійно</title>
   <meta name="description" content="Стоматологічна клініка Dental Studio — терапія, гігієна, хірургія, протезування. Запис на огляд онлайн.">
 
-  <link rel="preload" href="assets/fonts/files/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/files/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
@@ -94,7 +94,9 @@
   <main id="main">
     <section class="hero" id="hero">
       <picture class="hero__bg">
+        <source media="(min-width: 768px)" srcset="assets/images/hero.webp" type="image/webp">
         <source media="(min-width: 768px)" srcset="assets/images/hero.png">
+        <source srcset="assets/images/hero_mobile.webp" type="image/webp">
         <img src="assets/images/hero_mobile.png" alt="Кабінет клініки Dental Studio" fetchpriority="high">
       </picture>
       <div class="hero__overlay"></div>
@@ -110,12 +112,12 @@
 
         <h1 class="hero__title reveal">
           Стоматологія,<br>
-          де <em>не страшно</em><br>
-          і зручно
+          де <em>комфортно</em><br>
+          та професійно
         </h1>
 
         <p class="hero__subtitle reveal">
-          Від першого огляду до результату — без черг, сюрпризів і зайвих процедур.
+          Від першого огляду до якісного результату. Місце, яке змінить Ваше уявлення про стоматологію.
         </p>
 
         <button type="button" class="btn btn--pill js-open-modal reveal">Записатися на огляд</button>
@@ -125,11 +127,14 @@
       <div class="container">
         <p class="section-eyebrow">-Послуги</p>
         <h2 class="section-title">Від огляду до протезування</h2>
-        <p class="section-intro">Всі необхідні послуги в одному місці — без направлень і зайвих переїздів.</p>
+        <p class="section-intro">Всі необхідні послуги в одному місці.</p>
 
         <div class="services__grid">
           <article class="service-card">
-            <div class="img-placeholder service-card__bg" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — Терапія (буде додано пізніше)">Фото — 640×850</div>
+            <picture class="service-card__bg">
+              <source srcset="assets/images/therapy_new.webp" type="image/webp">
+              <img src="assets/images/therapy_new.png" alt="Терапія" width="1086" height="1448" loading="lazy">
+            </picture>
             <div class="service-card__overlay"></div>
             <div class="service-card__content">
               <div>
@@ -138,14 +143,17 @@
               </div>
               <div>
                 <p class="service-card__price-label">Ціна</p>
-                <p class="service-card__price">₴1000 – ₴4000</p>
-                <p class="service-card__description">Карієс, пульпіт, реставрація. Пояснюємо що і чому — до початку лікування.</p>
+                <p class="service-card__price">₴1500 – ₴1800</p>
+                <p class="service-card__description">Лікування карієсу, пульпіту, періодонтиту, реставрація зубів.</p>
               </div>
             </div>
           </article>
 
           <article class="service-card">
-            <div class="img-placeholder service-card__bg" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — Гігієна (буде додано пізніше)">Фото — 640×850</div>
+            <picture class="service-card__bg">
+              <source srcset="assets/images/hygeine_entral_image.webp" type="image/webp">
+              <img src="assets/images/hygeine_entral_image.png" alt="Гігієна" width="1086" height="1448" loading="lazy">
+            </picture>
             <div class="service-card__overlay"></div>
             <div class="service-card__content">
               <div>
@@ -154,14 +162,17 @@
               </div>
               <div>
                 <p class="service-card__price-label">Ціна</p>
-                <p class="service-card__price">₴500 – ₴2000</p>
+                <p class="service-card__price">₴1000 – ₴3000</p>
                 <p class="service-card__description">Чистка і відбілювання. Помітний результат після першого візиту.</p>
               </div>
             </div>
           </article>
 
           <article class="service-card">
-            <div class="img-placeholder service-card__bg" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — Хірургія (буде додано пізніше)">Фото — 640×850</div>
+            <picture class="service-card__bg">
+              <source srcset="assets/images/protezuvannya_entral.webp" type="image/webp">
+              <img src="assets/images/protezuvannya_entral.png" alt="Хірургія" width="1254" height="1254" loading="lazy">
+            </picture>
             <div class="service-card__overlay"></div>
             <div class="service-card__content">
               <div>
@@ -170,14 +181,17 @@
               </div>
               <div>
                 <p class="service-card__price-label">Ціна</p>
-                <p class="service-card__price">₴500 – ₴2000</p>
+                <p class="service-card__price">₴1000 – ₴18 000</p>
                 <p class="service-card__description">Видалення і імплантація. Сучасна анестезія — без болю і зайвої тривоги.</p>
               </div>
             </div>
           </article>
 
           <article class="service-card">
-            <div class="img-placeholder service-card__bg" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото — Протезування (буде додано пізніше)">Фото — 640×850</div>
+            <picture class="service-card__bg">
+              <source srcset="assets/images/protezuvannia_entral.webp" type="image/webp">
+              <img src="assets/images/protezuvannia_entral.png" alt="Протезування" width="1086" height="1448" loading="lazy">
+            </picture>
             <div class="service-card__overlay"></div>
             <div class="service-card__content">
               <div>
@@ -186,7 +200,7 @@
               </div>
               <div>
                 <p class="service-card__price-label">Ціна</p>
-                <p class="service-card__price">₴5000 – ₴10000</p>
+                <p class="service-card__price">₴4500 – ₴11 000</p>
                 <p class="service-card__description">Коронки металокераміка, цирконій і E-max — інші зуби не виділятимуться.</p>
               </div>
             </div>
@@ -282,10 +296,16 @@
         </div>
         <div class="about__gallery">
           <div class="about__photo about__photo--primary">
-            <img src="assets/images/about_clinic_first.png" alt="Інтер'єр клініки Dental Studio" width="1122" height="1402" loading="lazy">
+            <picture>
+              <source srcset="assets/images/about_clinic_first.webp" type="image/webp">
+              <img src="assets/images/about_clinic_first.png" alt="Інтер'єр клініки Dental Studio" width="1122" height="1402" loading="lazy">
+            </picture>
           </div>
           <div class="about__photo about__photo--secondary">
-            <img src="assets/images/about_clinic_second.png" alt="Кабінет клініки Dental Studio" width="1086" height="1448" loading="lazy">
+            <picture>
+              <source srcset="assets/images/about_clinic_second.webp" type="image/webp">
+              <img src="assets/images/about_clinic_second.png" alt="Кабінет клініки Dental Studio" width="1086" height="1448" loading="lazy">
+            </picture>
           </div>
         </div>
       </div>
@@ -346,10 +366,22 @@
     </section>
     <section class="cta-banner">
       <div class="cta-banner__pin">
-        <div class="img-placeholder cta-banner__photo cta-banner__photo--1" style="--ph-aspect-ratio: 4/5;" role="img" aria-label="Фото клініки (буде додано пізніше)">Фото</div>
-        <div class="img-placeholder cta-banner__photo cta-banner__photo--2" style="--ph-aspect-ratio: 3/4;" role="img" aria-label="Фото клініки (буде додано пізніше)">Фото</div>
-        <div class="img-placeholder cta-banner__photo cta-banner__photo--3" style="--ph-aspect-ratio: 4/5;" role="img" aria-label="Фото клініки (буде додано пізніше)">Фото</div>
-        <div class="img-placeholder cta-banner__photo cta-banner__photo--4" style="--ph-aspect-ratio: 3/2;" role="img" aria-label="Фото клініки (буде додано пізніше)">Фото</div>
+        <picture class="cta-banner__photo cta-banner__photo--1">
+          <source srcset="assets/images/ta_1.webp" type="image/webp">
+          <img src="assets/images/ta_1.jpg" alt="" width="2323" height="2560" loading="lazy">
+        </picture>
+        <picture class="cta-banner__photo cta-banner__photo--2">
+          <source srcset="assets/images/ta_2.webp" type="image/webp">
+          <img src="assets/images/ta_2.jpg" alt="" width="1920" height="2560" loading="lazy">
+        </picture>
+        <picture class="cta-banner__photo cta-banner__photo--3">
+          <source srcset="assets/images/ta_3.webp" type="image/webp">
+          <img src="assets/images/ta_3.jpg" alt="" width="1920" height="2560" loading="lazy">
+        </picture>
+        <picture class="cta-banner__photo cta-banner__photo--4">
+          <source srcset="assets/images/ta_4.webp" type="image/webp">
+          <img src="assets/images/ta_4.png" alt="" width="2484" height="1206" loading="lazy">
+        </picture>
 
         <div class="container cta-banner__inner">
           <h2 class="cta-banner__title">Готові записатися на огляд?</h2>
@@ -383,7 +415,7 @@
         <p class="footer__heading">Контакти</p>
         <a class="footer__link" href="tel:+380509088530">+38 (050) 908-85-30</a>
         <!-- TODO: replace with the clinic's real email -->
-        <a class="footer__link" href="mailto:info@example.com">info@example.com</a>
+        <a class="footer__link" href="mailto:ira.fomenko98@gmail.com">ira.fomenko98@gmail.com</a>
 
         <div class="footer__socials">
           <!-- TODO: replace href values with real social links -->
